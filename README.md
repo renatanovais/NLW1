@@ -13,7 +13,7 @@ The project is configured to run on a local server, with the command npm start. 
 Follow some prints of the pages created.
 
 ###### Landing Page
-![](/result/landing-page-view.pgn)
+![](/result/landing-page-view.png)
 
 ###### Searching Point
 ![](/result/searching-view.png)
