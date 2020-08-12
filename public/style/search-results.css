@@ -1,0 +1,89 @@
+body {
+  background-color: white;
+}
+
+body::after {
+  background-color: rgb(240, 240, 245);
+  bottom: 0;
+  content: "";
+  height: 16rem;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.page-search-results {
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 90%;
+}
+
+.page-search-results header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+
+.page-search-results header a {
+  align-items: center;
+  color: var(--title-color);
+  display: flex;
+  font-weight: 700;
+}
+
+.page-search-results header a span {
+  background-image: url('../assets/icones/arrow-left.svg');
+  display: flex;
+  margin-right: 16px;
+  height: 24px;
+  width: 20px;
+}
+
+main {
+  margin: 48px;
+}
+
+main h4 {
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  margin-bottom: 32px;
+}
+
+main .cards {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+main .cards img {
+  border-radius: 8px 8px 0 0;
+  height: 150px;
+  object-fit: cover;
+  width: 100%;
+}
+
+main .cards h1 {
+  color: rgb(50, 33, 83);
+  font-size: 36px;
+  line-height: 41px;
+  margin-top: 32px;
+}
+
+main .cards h3 {
+  color: var(--primary-color);
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  margin-top: 24px
+}
+
+main .card p {
+  color: rgb(111, 108, 128);
+  font-size: 16px;
+  line-height: 26px;
+}

@@ -1,0 +1,58 @@
+npm - gerenciador de pacotes, gerenciador de módulos, gerenciador de dependencias.
+package.json - explica o projeto.
+
+caminhos da aula 3
+1. baixar nodejs
+2. instalar node js, verificar no terminal com node -v e npm -v.
+3. criar pastar public (arquivos js, img, style) e src(pasta views com htmls e arquivo server.js fora da pasta)
+4. instalar express na raiz do projeto. (pelo terminal: npm install express)
+5. ao instalar, criou-se automaticamente a pasta node_modules com varias pastas com dependencias do express;
+6. Criar e iniciar o servidor:
+  1. criar arquivo server.js com a porta desejada.
+  2. rodar o node src/server.js
+  3. alterar no package.json o script, tirando o "test" e colocando o "start" -> atalho para o npm.
+    a partir dai basta digitar no terminal, na raiz da pasta, npm start que irá iniciar o servidor.
+OBS: o local host precisa ser inicializado novamente toda vez que alterar alguma coisa. Para não ser necessário, instalamos o
+nodemon (monitoramento do node), que fica aguardando e vigiando as alterações e atualiza o servidor.
+A instalação foi feita pelo terminal, 'npm install nodemon -D'.
+Após a instalação, alteramos o package.json. A linha start, ao inves de node, muda para nodemon. 
+5. Fazer página inicial (no caso, criado o localhost:3000).
+  1. server.get('/', function(req, res) {
+    }) -> feito no arquivo server.js. O GET é um protocolo de conversar atraves do HTTP. O servidor esta pedindo a barra, e assim irá receber uma função.
+    A função terá uma pergunta(req - requisição) e resposta(res).
+    A toda atulização, digitar rs no npm para reiniciar o servidor.
+6. Configurar arquivos estáticos
+  1. Configurar a pasta public, para ser uma pasta /, sem precisar alterar caminho.
+  Usar função server.use como apresentado no server.js.
+7. Criar as rotas para todas as páginas e alterar nos arquivos originais, o caminho .html para apenas uma rota /nome-arquivo, já criada.
+
+Templete Engine
+ - trabalha com os arquivos HTML de maneira inteligente. Arquivos que possam ter funções, if else, estruturas de repetição. 
+ - motor usado para trabalhar com HTML. Consegue alterar partes do HTML com dados coletados.
+ - faz o HTML ser bem mais dinâmico. 
+  - iremos usar o nunjucks. Assim, fazer pelo terminal: npm install nunjucks.
+{% include "arquivo-padrão.html" %} - adiciona um arquivo no HTML. 
+exemplo feito com page-header, no search-result e no create-point, e com o modal, no index.html.
+
+aula 5
+Banco de dados
+
+SQL - structured Query Language - linguagem para realizar buscas organizadas e estruturadas.
+Para criar, consultar, atualizar e deletar dados, entre outras funções.
+
+No SQL os dados são organizados por tabelas, ou entidades ou relações, com colunas e linhas.
+
+Tecnologia SQL - SQLite - open-source, reside na pŕopria aplicação e fácil de configurar.
+
+1. instalação do sqlite - npm install sqlite3
+2. criar pasta database
+3. criar arquivo db.js
+4. importar a dependencia do sqlite3, com require.
+
+
+
+
+
+
+
+

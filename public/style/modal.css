@@ -1,0 +1,87 @@
+.modal {
+  align-items: center;
+  background-color: rgba(14, 10, 20, 0.9);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  transition: 400ms;
+  width: 100vw;
+}
+
+.modal.hide {
+  display: none;
+}
+
+.modal .content {
+  color: white;
+  width: 420px;
+}
+
+.modal .header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.modal .header a {
+  background-image: url('../assets/icones/x.svg');
+  display: flex;
+  font-size: 0.01px;
+  height: 20px;
+  width: 20px;
+}
+
+.modal .header h1 {
+  color: white;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.modal form label {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 8px;
+}
+
+.modal form .field {
+  display: flex;
+}
+
+.modal form input {
+  background-color: rgb(240, 240, 245);
+  border: none;
+  border-radius: 8px 0 0 8px;
+  coolor: rgb(111, 108, 128);
+  font-size: 16px;
+  flex: 1;
+  padding: 16px 24px;
+}
+
+.modal form button {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0 8px 8px 0;
+  height: 72px;
+  width: 72px;
+}
+
+.modal form button:hover {
+  background-color: rgb(47, 184, 110);
+  cursor: pointer;
+}
+
+/* isto é para o modal da página point-created */
+.point .content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.point h1 {
+  color: white;
+  margin-top: 32px;
+}
